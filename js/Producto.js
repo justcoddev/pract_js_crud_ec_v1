@@ -1,18 +1,17 @@
 class Producto {
-
-  constructor(idproducto, nombre, cantidad, precio) {
-    this.idproducto = idproducto;
+  constructor(idProducto, nombre, cantidad, precio) {
+    this.idproducto = idProducto;
     this.nombre = nombre;
     this.cantidad = cantidad;
     this.precio = precio;
   }
+
   get IdProducto() {
     return this.idproducto;
   }
   set IdProducto(idproducto) {
     this.idproducto = idproducto;
   }
-
   get Nombre() {
     return this.nombre;
   }
