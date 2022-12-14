@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body onload="mostrar()">
+  <div class="contenedor">
+    <h1 id="titulo">Lista de Personas!</h1>
+  </div>
+  <div
+    style="height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #171717;"
+    class="content about" class="contenedor3">
+    <form id="forma">
+      <label style="color: #fff;" for="idproducto">id Producto:</label>
+      <input id="idproducto" placeholder="ingrese id del producto" />
+      <br>
+      <label style="color: #fff;" for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="ingrese nombre">
+      <br>
+      <label style="color: #fff;" for="cantidad">Cantidad:</label>
+      <input type="text" id="cantidad" placeholder="ingrese cantidad">
+      <br>
+      <label style="color: #fff;" for="precio">Precio:</label>
+      <input type="text" id="precio" placeholder="ingrese precio">
+      <br>
+      <!-- <p class="button">
+        <button
+          style="display: inline-block; margin-top: 15px; padding: 10px 40px; border: 2px solid #5b0101; color: #fff; text-decoration: none; background: #000000; margin: 0 10px;"
+          type="submit">Enviar</button>
+      </p> -->
+    </form>
+    <button class="boton" onclick="agregar()">AGREGAR</button>
+  </div>
+  <div id="productoss">
+    <table  border="1">
+      <h1>Lista de Productos</h1>
+      <th>id</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <tr>
+        <td id="tableidproducto"></td>
+        <td id="tablenombre" ></td>
+        <td id="tablecantidad" ></td>
+        <td id="tableprecio" ></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/Producto.js"></script>
+</body>
+
+</html>
